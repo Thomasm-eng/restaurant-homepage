@@ -7,8 +7,8 @@
 }
 #img-container{
     margin-top: 50px;
-    display:flex;
-    flex-direction: column;
+    display:grid;
+    justify-items: center;
     align-items: center;
     border: 1px solid black;
     min-width: 40%;
