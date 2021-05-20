@@ -20,7 +20,7 @@ const homePage = () => {
 
     mainContent.appendChild(titleText);
     let coffeeImage = document.createElement('img');
-    coffeeImage.id = "main-img";
+    coffeeImage.classList.add("main-img");
     coffeeImage.src = "coffee-beans.jpeg";
     if(!imgContainer.hasChildNodes()){
         imgContainer.appendChild(createParagraphs("Offering personalized brews since 1500"));
@@ -42,4 +42,6 @@ const createParagraphs = (paraText) => {
     para.textContent = paraText;
     return para;
 }
-export {homePage, createDivs, mainContent, navBar, titleText, imgContainer};
+export {homePage, createDivs, mainContent, navBar, titleText, imgContainer,
+    createParagraphs
+};
